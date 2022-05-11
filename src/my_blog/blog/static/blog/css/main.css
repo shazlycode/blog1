@@ -1,6 +1,21 @@
-div{
-    color: rgb(193, 206, 16);
-    border: cornflowerblue;
-    width: 25;
-    font-size: xx-large;
+
+html,body{
+    direction: rtl;
+    text-align: right;
 }
+
+@font-face {
+    font-family: 'Tajawal';
+    src: url('../fonts/Tajawal-Bold.ttf') format('truetype'),local('Tajawal');
+    
+}
+
+
+div{
+    color: rgb(54, 54, 166); 
+}
+    
+body {
+    font-family: 'Tajawal', sans-serif;
+
+  }

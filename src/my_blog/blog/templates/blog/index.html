@@ -1,15 +1,120 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href='{% static "blog/css/main.css"%}' />
+    <link rel="stylesheet" href="{% static 'blog/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'blog/css/main.css' %}" />
+    <link rel="shortcut icon" href="{% static 'blog/images/logo.ico' %}" />
+    {% comment %}
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+    {% endcomment %}
     <title>Document</title>
   </head>
   <body>
-    <div>بسم الله الرحمن الرحيم</div>
+    <header>
+      <!-- start NavBar-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <img src="{% static 'blog/images/logo.ico' %}" alt="" width="35" />
+          <a class="navbar-brand" href="https://google.com">دوائي</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >الرئيسية</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  اخر الاخبار
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">اخبار الدواء</a></li>
+                  <li><a class="dropdown-item" href="#">اخبار الصيدلة</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">التداخلات الدوائية</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">من نحن</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">تسجيل دخول</a>
+              </li>
+              <li>
+                <a class="nav-link active" href="#">تسجيل</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- end NavBar-->
+    </header>
+
+    <section>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-8">التدوينات</div>
+          <div class="col-md-4">
+            <div class="card">
+              <h3 class="text-center bg-secondary text-light">اخر التدوينات</h3>
+              <ul>
+                <li><a href="">التدوينة الاولى</a></li>
+                <li><a href="">التدوينة الثانية</a></li>
+                <li><a href="">التدوينة الثالثة</a></li>
+                <li><a href="">التدوينة الرابعة</a></li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3 class="text-center bg-secondary text-light">اخر التعليقات</h3>
+              <ul>
+                <li><a href="">التعليق الاول</a></li>
+                <li><a href="">التعليق الاول</a></li>
+                <li><a href="">التعليق الاول</a></li>
+                <li><a href="">التعليق الاول</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="{% static 'blog/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'blog/js/popper.min.js' %}"></script>
+    <script src="{% static 'blog/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'blog/js/fontawesome-all.min.js' %}"></script>
   </body>
 </html>
